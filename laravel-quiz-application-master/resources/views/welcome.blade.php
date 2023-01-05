@@ -45,7 +45,7 @@
             <nav class="navbar navbar-expand-lg pl-3 pl-sm-0" id="navbar">
             <div class="container">
               <div class="navbar-brand-wrapper d-flex w-100">
-                <img src="{{ url('assets/images/Group2.svg')}}" alt="">
+                <img src="{{ url('assets/images/Group6.svg')}}" alt="">
                 <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="mdi mdi-menu navbar-toggler-icon"></span>
                 </button> 
@@ -77,7 +77,7 @@
                       <a href="{{ route('register') }}"class="btn btn-opacity-success ml-1"><b>Enregistrement joueur</b></a>
                  
               </div>
-              <img src="{{ url('assets/images/Group171.svg')}}" alt="" class="img-fluid">
+              <img src="{{ url('assets/images/quiz.jpg')}}" alt="" class="img-fluid">
             </div>
           </div>
     </body>
