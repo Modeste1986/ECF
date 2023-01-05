@@ -10,12 +10,12 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">Manage Exam</h1>
+            <h1 class="m-0">Manager Quiz</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Manage Exam</li>
+              <li class="breadcrumb-item"><a href="#">Acceuil</a></li>
+              <li class="breadcrumb-item active">Manager Quiz</li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
@@ -28,10 +28,10 @@
               <!-- Default box -->
               <div class="card">
                 <div class="card-header">
-                  <h3 class="card-title">Title</h3>
+                  <h3 class="card-title">Titre</h3>
   
                   <div class="card-tools">
-                        <a class="btn btn-info btn-sm" href="javascript:;" data-toggle="modal" data-target="#myModal">Add new</a>
+                        <a class="btn btn-info btn-sm" href="javascript:;" data-toggle="modal" data-target="#myModal">Ajouter nouveau</a>
                   </div>
                 </div>
                 <div class="card-body">
@@ -39,9 +39,9 @@
                         <thead>
                             <tr>
                                 <th>#</th>
-                                <th>Title</th>
-                                <th>Category</th>
-                                <th>Exam Date</th>
+                                <th>Titre</th>
+                                <th>Categorie</th>
+                                <th>Date Quiz</th>
                                 <th>Status</th>
                                 <th>Actions</th>
                             </tr>
@@ -55,9 +55,9 @@
                                    <td>{{ $exam['exam_date']}}</td>
                                    <td><input type="checkbox" class="exam_status" data-id="{{ $exam['id']}}" <?php if($exam['status']==1){ echo "checked";} ?> name="status"></td>
                                    <td>
-                                       <a href="{{ url('admin/edit_exam/'.$exam['id'])}}" class="btn btn-info">Edit</a>
-                                       <a href="{{ url('admin/delete_exam/'.$exam['id'])}}" class="btn btn-danger">Delete</a>
-                                       <a href="{{ url('admin/add_questions/'.$exam['id'])}}" class="btn btn-primary">Add Question</a>
+                                       <a href="{{ url('admin/edit_exam/'.$exam['id'])}}" class="btn btn-info">Editer</a>
+                                       <a href="{{ url('admin/delete_exam/'.$exam['id'])}}" class="btn btn-danger">Effacer</a>
+                                       <a href="{{ url('admin/add_questions/'.$exam['id'])}}" class="btn btn-primary">Ajouter Question</a>
                                    </td>
                                </tr>
                            @endforeach
@@ -84,7 +84,7 @@
       <!-- Modal content-->
       <div class="modal-content">
         <div class="modal-header">
-          <h4 class="modal-title">Add new Exam</h4>
+          <h4 class="modal-title">Ajouter nouveau Quiz</h4>
           <button type="button" class="close" data-dismiss="modal">&times;</button>
         </div>
         <div class="modal-body">
@@ -92,28 +92,28 @@
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="form-group">
-                            <label for="">Enter title</label>
+                            <label for="">Entrer titre</label>
                             {{ csrf_field()}}
                             <input type="text" required="required" name="title" placeholder="Enter title" class="form-control">
                         </div>
                     </div>
                     <div class="col-sm-12">
                         <div class="form-group">
-                            <label for="">Enter Date</label>
+                            <label for="">Entrer Date</label>
                             <input type="date" required="required" name="exam_date"  class="form-control">
                         </div>
                     </div>
                     <div class="col-sm-12">
                       <div class="form-group">
-                          <label for="">Enter duration (in minutes)</label>
+                          <label for="">Entrer duration (en minutes)</label>
                           <input type="text" required="required" name="exam_duration"  class="form-control">
                       </div>
                   </div>
                     <div class="col-sm-12">
                         <div class="form-group">
-                            <label for="">Select category</label>
+                            <label for="">Selectionner categorie</label>
                             <select class="form-control" required="required" name="exam_category">
-                                <option value="">Select</option>
+                                <option value="">Selectionner</option>
                                 @foreach ($category as $cat)
                                 <option value="{{ $cat['id']}}">{{ $cat['name']}}</option>
                                 @endforeach
@@ -122,7 +122,7 @@
                     </div>
                     <div class="col-sm-12">
                         <div class="form-group">
-                            <button class="btn btn-primary">Add</button>
+                            <button class="btn btn-primary">Ajouter</button>
                         </div>
                     </div>
                 </div>

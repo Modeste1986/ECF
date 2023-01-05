@@ -13,7 +13,7 @@
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item"><a href="#">Acceuil</a></li>
               <li class="breadcrumb-item active">Admin</li>
             </ol>
           </div><!-- /.col -->
@@ -35,7 +35,7 @@
               <div class="inner">
                 <h3>{{ $student}}</h3>
 
-                <p>Total students</p>
+                <p>Total joueurs</p>
               </div>
               <div class="icon">
                 <i class="ion ion-person-add"></i>
@@ -64,7 +64,7 @@
               <div class="inner">
                 <h3>{{ $exam}}</h3>
 
-                <p>Exams</p>
+                <p>Quiz</p>
               </div>
               <div class="icon">
                 <i class="ion ion-stats-bars"></i>
@@ -78,7 +78,7 @@
               <div class="inner">
                 <h3>65</h3>
 
-                <p>Unique Visitors</p>
+                <p>Visiteurs Unique</p>
               </div>
               <div class="icon">
                 <i class="ion ion-pie-graph"></i>

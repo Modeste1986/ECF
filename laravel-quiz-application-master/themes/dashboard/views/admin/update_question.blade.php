@@ -10,12 +10,12 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">Add questions</h1>
+            <h1 class="m-0">Ajouter questions</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Update Exam questions</li>
+              <li class="breadcrumb-item"><a href="#">Acceuil</a></li>
+              <li class="breadcrumb-item active">M-à-j questions quiz</li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
@@ -28,7 +28,7 @@
               <!-- Default box -->
               <div class="card">
                 <div class="card-header">
-                  <h3 class="card-title">Title</h3>
+                  <h3 class="card-title">Titre</h3>
   
                 </div>
                 <div class="card-body">
@@ -36,7 +36,7 @@
                         <div class="row">
                             <div class="col-sm-12">
                                 <div class="form-group">
-                                    <label for="">Enter Question</label>
+                                    <label for="">Entrer Question</label>
                                     {{ csrf_field()}}
                                     <input type="hidden" name="id" value="{{ $q[0]['id']}}">
                                     <input type="text" value="{{ $q[0]['questions']}}" required="required" name="question" placeholder="Enter Question" class="form-control">
@@ -47,30 +47,30 @@
                             ?>
                             <div class="col-sm-6">
                                 <div class="form-group">
-                                    <label for="">Enter Option 1</label>
+                                    <label for="">Entrer Option 1</label>
                                     <input type="text" value="{{ $options->option1}}" required="required" name="option_1" placeholder="Enter Question" class="form-control">
                                 </div>
                             </div>
                             <div class="col-sm-6">
                                 <div class="form-group">
-                                    <label for="">Enter Option 2</label>
+                                    <label for="">Entrer Option 2</label>
                                     <input type="text" value="{{ $options->option2}}" required="required" name="option_2" placeholder="Enter Option 2" class="form-control">
                                 </div>
                             </div>
                             <div class="col-sm-6">
                                 <div class="form-group">
-                                    <label for="">Enter Option 3</label>
+                                    <label for="">Entrer Option 3</label>
                                     <input type="text" value="{{$options->option3}}" required="required" name="option_3" placeholder="Enter  Option 3" class="form-control">
                                 </div>
                             </div>
                             <div class="col-sm-6">
                                 <div class="form-group">
-                                    <label for="">Enter Option 4</label>
+                                    <label for="">Entrer Option 4</label>
                                     <input type="text" value="{{ $options->option4}}" required="required" name="option_4" placeholder="Enter  Option 4" class="form-control">
                                 </div>
                             </div>
                             <div class="form-group">
-                              <label for="">Select correct option</label>
+                              <label for="">Selectionner la bonne option</label>
                               <select class="form-control" required="required" name="ans">
                                   <option value="">Select</option>
                                 
@@ -83,7 +83,7 @@
                           </div>
                             <div class="col-sm-12">
                                 <div class="form-group">
-                                    <button class="btn btn-primary">Update</button>
+                                    <button class="btn btn-primary">Mise-à-Jour</button>
                                 </div>
                             </div>
                         </div>

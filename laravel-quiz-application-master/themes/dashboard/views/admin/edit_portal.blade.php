@@ -10,12 +10,12 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">Edit Portal</h1>
+            <h1 class="m-0">Editer Portal</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Manage Exam</li>
+              <li class="breadcrumb-item"><a href="#">Acceuil</a></li>
+              <li class="breadcrumb-item active">Manager Quiz</li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
@@ -33,7 +33,7 @@
                         <div class="row">
                             <div class="col-sm-12">
                                 <div class="form-group">
-                                    <label for="">Enter name</label>
+                                    <label for="">Entrer nom</label>
                                     {{ csrf_field()}}
                                     <input type="hidden" name="id" value="{{ $portal_info->id }}">
                                     <input type="text" required="required" value="{{ $portal_info->name}}" name="name" placeholder="Enter name" class="form-control">
@@ -41,27 +41,27 @@
                             </div>
                             <div class="col-sm-12">
                                 <div class="form-group">
-                                    <label for="">Enter E-mail</label>
+                                    <label for="">Entrer E-mail</label>
                                     <input type="text" required="required" value="{{ $portal_info->email}}" name="email" placeholder="Enter email" class="form-control">
                                 </div>
                             </div>
                             <div class="col-sm-12">
                                 <div class="form-group">
-                                    <label for="">Enter mobile no.</label>
+                                    <label for="">Entrer num mobile</label>
                                     {{ csrf_field()}}
                                     <input type="text" required="required" value="{{ $portal_info->mobile_no}}" name="mobile_no" placeholder="Enter mobile number" class="form-control">
                                 </div>
                             </div>
                             <div class="col-sm-12">
                                 <div class="form-group">
-                                    <label for="">Enter Password</label>
+                                    <label for="">Entrer Password</label>
                                     {{ csrf_field()}}
                                     <input type="password" required="required"  name="password" placeholder="Enter password" class="form-control">
                                 </div>
                             </div>
                             <div class="col-sm-12">
                                 <div class="form-group">
-                                    <button class="btn btn-primary">Update</button>
+                                    <button class="btn btn-primary">Mise-à-jour</button>
                                 </div>
                             </div>
                         </div>

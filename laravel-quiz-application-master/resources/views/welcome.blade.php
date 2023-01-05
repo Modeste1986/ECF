@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>Quiz</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
@@ -70,11 +70,11 @@
           </header>
           <div class="banner" >
             <div class="container">
-              <h1 class="font-weight-semibold">Welcome to online quiz application</h1>
-              <h6 class="font-weight-normal text-muted pb-3">Create and take students assesment tests in very reliable and fast way</h6>
+              <h1 class="font-weight-semibold">ECF Simplon</h1>
+              <h6 class="font-weight-normal text-muted pb-3">Quiz by Modeste</h6>
               <div>
-                      <a href="{{ url('/login') }}" class="btn btn-opacity-light mr-1"><b>Student Login</b></a>
-                      <a href="{{ route('register') }}"class="btn btn-opacity-success ml-1"><b>Student Register</b></a>
+                      <a href="{{ url('/login') }}" class="btn btn-opacity-light mr-1"><b>Joueur Login</b></a>
+                      <a href="{{ route('register') }}"class="btn btn-opacity-success ml-1"><b>Enregistrement joueur</b></a>
                  
               </div>
               <img src="{{ url('assets/images/Group171.svg')}}" alt="" class="img-fluid">
