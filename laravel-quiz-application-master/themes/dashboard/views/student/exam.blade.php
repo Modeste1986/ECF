@@ -10,12 +10,12 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">Exams</h1>
+            <h1 class="m-0">Quiz</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Exam</li>
+              <li class="breadcrumb-item"><a href="#">Acceuil</a></li>
+              <li class="breadcrumb-item active">Quiz</li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
@@ -33,10 +33,10 @@
                         <thead>
                             <tr>
                                 <th>#</th>
-                                <th>Exam title</th>
-                                <th>Exam date</th>
+                                <th>Titre Quiz</th>
+                                <th>Date Quiz</th>
                                 <th>Status</th>
-                                <th>Result</th>
+                                <th>Resultat</th>
                                 <th>Actions</th>
                             </tr>
                         </thead>
@@ -66,7 +66,7 @@
                                 <?php
                                     if($std_info['exam_joined']==1){
                                 ?>      
-                                      <a href="{{ url('student/view_result/'.$std_info['exam_id'])}}" class="btn btn-info btn-sm">View Result</a>
+                                      <a href="{{ url('student/view_result/'.$std_info['exam_id'])}}" class="btn btn-info btn-sm">Voir Resultat</a>
                                 <?php      
                                     }
                                 ?>
@@ -79,12 +79,12 @@
                                     if($std_info['exam_joined']==0){
 
                                   ?>
-                                    <a href="{{ url('student/join_exam/'.$std_info['exam_id'])}}" class="btn btn-primary btn-sm">Join Exam</a>
+                                    <a href="{{ url('student/join_exam/'.$std_info['exam_id'])}}" class="btn btn-primary btn-sm">Rejoindre Quiz</a>
                                   
                                   <?php
                                       } else{
                                   ?>      
-                                        <a href="{{ url('student/view_answer/'.$std_info['exam_id'])}}" class="btn btn-primary btn-sm">View Answers</a>
+                                        <a href="{{ url('student/view_answer/'.$std_info['exam_id'])}}" class="btn btn-primary btn-sm">Voir Réponses</a>
 
                                   
                                   <?php     

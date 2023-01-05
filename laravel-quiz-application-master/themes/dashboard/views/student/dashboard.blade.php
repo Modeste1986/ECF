@@ -9,11 +9,11 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">All exams</h1>
+            <h1 class="m-0">Tous les Quiz</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item"><a href="#">Acceuil</a></li>
               <li class="breadcrumb-item active">Dashboard</li>
             </ol>
           </div><!-- /.col -->
@@ -55,14 +55,14 @@
                   <h3>{{ $exam['title']}}</h3>
   
                   <p>{{ $exam['cat_name']}}</p>
-                  <p>Exam date : {{$exam['exam_date']}}</p>
+                  <p>Date Quiz: {{$exam['exam_date']}}</p>
                   </div>
                   <div class="icon">
                   <i class="ion ion-bag"></i>
                   </div>
                   @if (strtotime(date('Y-m-d')) <= strtotime($exam['exam_date']))
                       
-                      <a data-id="{{ $exam['id']}}"  class="apply_exam small-box-footer">Apply<i class="fas fa-arrow-circle-right"></i></a>
+                      <a data-id="{{ $exam['id']}}"  class="apply_exam small-box-footer">Appliquer<i class="fas fa-arrow-circle-right"></i></a>
             
                   @endif
                   

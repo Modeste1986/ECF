@@ -16,12 +16,12 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">Exams</h1>
+            <h1 class="m-0">Quiz</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Exam</li>
+              <li class="breadcrumb-item"><a href="#">Acceuil</a></li>
+              <li class="breadcrumb-item active">Quiz</li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
@@ -37,14 +37,14 @@
                 <div class="card-body">
                    <div class="row">
                        <div class="col-sm-4">
-                          <h3 class="text-center">Time : {{ $exam->exam_duration}} min</h3>
+                          <h3 class="text-center">Temps : {{ $exam->exam_duration}} min</h3>
                        </div>
                        <div class="col-sm-4">
-                           <h3><b>Timer</b> :  <span class="js-timeout" id="timer">{{ $exam['exam_duration']}}:00</span></h3>
+                           <h3><b>Compte à rebours</b> :  <span class="js-timeout" id="timer">{{ $exam['exam_duration']}}:00</span></h3>
                        </div>
                        
                         <div class="col-sm-4">
-                            <h3 class="text-right"><b>Status</b> :Running</h3>
+                            <h3 class="text-right"><b>Status</b> :En cours</h3>
                         </div>
                    </div>
                 </div>
@@ -82,7 +82,7 @@
 
                           <div class="col-sm-12">
                             <input type="hidden" name="index" value="{{ $key+1}}">
-                              <button type="submit" class="btn btn-primary" id="myCheck">Submit</button>
+                              <button type="submit" class="btn btn-primary" id="myCheck">Soumettre</button>
                           </div>
                    </div>
                   </form>

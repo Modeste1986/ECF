@@ -6,7 +6,7 @@
                     {{-- <div class="card-header">{{ __('Register') }}</div> --}}
 
                     <div class="card-body">
-                        <h1 class="text-center"><b> Admin Register</b></h1>
+                        <h1 class="text-center"><b>Enregistrement Admin</b></h1>
                         <form method="POST" action="{{ route('admin.register') }}" class="mt-4">
                             @csrf
 
